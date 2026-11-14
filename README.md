@@ -62,3 +62,13 @@ npm run dev:local
 - `local/` — автономный сервер и готовая локальная сборка.
 
 Оформление основано на снимке undogummies.com от 9 ноября 2026 года. Бренд в пользовательских текстах и брендированных изображениях — UTRO. 14 ноября исправлены последние семь файлов: один кадр отредактирован, три исходные фотографии и их копии заменены уже подготовленными фотографиями UTRO. Объём проверки и статус публикации — в [статусе замены бренда](docs/rebrand-status.md). Технические ключи, старые URL и архив исходного материала сохранены для совместимости. Скрипты Shopify, аналитики и платежей исходного магазина не выполняются.
+
+
+## Customer account and cart (GitHub Pages)
+
+- Customer entry: /utro/account/login/; guest area: /utro/account/orders/, /utro/account/subscriptions/, /utro/account/profile/.
+- The customer area follows the source store's navigation and layout, with UTRO branding and Russian copy. No original customer data or authentication tokens are copied.
+- Guest contact/address fields are optional and stored only in this browser under utro-guest-profile-v1. The interface says this explicitly and can delete these fields. This is not authentication.
+- The existing cart is shared across the storefront and customer pages, with quantity controls, purchase plans, gifts and configured discounts. /utro/cart/ opens it directly.
+- Real email sign-in, order history, subscription management and payment require an authenticated backend/payment integration. The static site does not simulate successful sign-in, create fictitious orders, or send profile data anywhere.
+- Source reference observed on 2026-11-14: account.undogummies.com/orders and /profile. Final visual QA was unavailable after the browser environment disconnected; CI validates the exported routes, data handling and asset paths.

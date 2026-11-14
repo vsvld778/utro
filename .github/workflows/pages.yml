@@ -23,7 +23,8 @@ jobs:
           node-version: '24'
       - run: node --test tests/brand.test.mjs
       - run: node scripts/build-github-pages.mjs
-      - run: node --test tests/github-pages.test.mjs
+      - run: node --check out/storefront.js && node --check out/account-page.js
+      - run: node --test tests/github-pages.test.mjs tests/account.test.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

@@ -1,3 +1,4 @@
+import {accountRoutes,renderAccountPage} from './account-pages.mjs';
 import {cp,mkdir,readFile,writeFile,rm,readdir} from 'node:fs/promises';
 import {resolve,dirname,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -54,9 +55,16 @@ storefront=`import {withBase} from './github-paths.js';\n`+storefront;
 storefront=storefront.replace("const localizedPath=(path,locale=ru?'ru':'en')=>locale==='ru'?path:'/en'+(path==='/'?'':path);","const localizedPath=(path,locale=ru?'ru':'en')=>withBase(locale==='ru'?path:'/en'+(path==='/'?'':path));");
 storefront=storefront.replaceAll('a[href="/account"]','a[href="/utro/account"]').replaceAll('a[href="/en/account"]','a[href="/utro/en/account"]').replaceAll('a[href="/cart"]','a[href="/utro/cart"]').replaceAll('a[href="/en/cart"]','a[href="/utro/en/cart"]');
 storefront=storefront.replaceAll('href="/admin"',`href="${hosted}/admin"`);
+storefront=storefront.replace("function openAccount(){","function openAccount(){location.assign(withBase('/account/login/'));return;");
+storefront=storefront.replace("const body=!cart.length?","const accountLink='<a class=\"cms-cart-account\" href=\"'+withBase('/account/login/')+'\">Личный кабинет</a>';\n const body=!cart.length?");
+storefront=storefront.replace("<p>${escapeText(storefrontText(emptyText))}</p></div>","<p>${escapeText(storefrontText(emptyText))}</p><a class=\"cms-cta\" href=\"${withBase('/products/undo-hangover-gummies/')}\">К покупкам</a>${accountLink}</div>");
+storefront=storefront.replace("${tr('Check out','Оформить заказ')}</button></div>","${tr('Check out','Оформить заказ')}</button>${accountLink}</div>");
+storefront=storefront.replace("// Merchant account is intentionally not impersonated.","\nconst headerCart=document.getElementById('CartButton');\nif(headerCart&&!document.body.classList.contains('utro-account')){\n const entry=document.createElement('a');entry.href=withBase('/account/login/');entry.className='utro-account-entry';entry.setAttribute('aria-label','Личный кабинет');\n entry.innerHTML='<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 22v-3a8 8 0 0 1 16 0v3\"/></svg>';\n headerCart.before(entry);\n}\n");
+
 const bindPrefix="function bindForm(form){if(form.matches('[data-product-form]'))return;";
 if(!storefront.includes(bindPrefix))throw Error('Form adapter requires review');
 storefront=storefront.replace(bindPrefix,bindPrefix+`form.innerHTML='<p>Чтобы отправить обращение или оставить email, откройте форму связи UTRO.</p><a class="cms-cta" href="${hosted}/pages/contact">Открыть форму связи</a>';return;`);
+storefront=storefront.replace("if(!state.preview){let dismiss=false;", "if(!state.preview&&!document.body.classList.contains('utro-account')){let dismiss=false;");
 await writeFile(join(out,'storefront.js'),storefront);
 for(const name of await readdir(out)){if(name.endsWith('.css'))await writeFile(join(out,name),cssURLs(await readFile(join(out,name),'utf8')))}
 const routes=new Map();
@@ -67,11 +75,19 @@ for(const page of Object.values(pages))if(page.locale==='ru')for(const match of 
 }
 for(const [route,canonical] of routes){
  const config=documents['/ru'+canonical]||emptyConfig();
- const html=renderStorefront({path:canonical,config,settings:documents.__settings||emptyConfig(),origin});
+ const html=renderStorefront({path:canonical,config,settings:documents.__settings||emptyConfig(),origin}).replace('</head>',`<link rel="stylesheet" href="/account.css"></head>`);
  await emit(route,htmlURLs(html));
 }
 for(const [route,page] of Object.entries(pages))if(page.locale==='en')await emit(route,redirect(withBase(page.canonicalPath)));
-for(const panel of ['account','cart','checkout'])await emit('/'+panel,redirect(`${base}/?panel=${panel}`));
+
+const homeHTML=renderStorefront({path:'/',config:emptyConfig(),settings:documents.__settings||emptyConfig(),origin});
+const stateMatch=homeHTML.match(/<script type="application\/json" id="cms-state">(.*?)<\/script>/s);
+if(!stateMatch)throw Error('Account storefront state missing');
+const accountState=JSON.parse(stateMatch[1]);accountState.config=emptyConfig();
+const stateJSON=JSON.stringify(accountState).replaceAll('<','\\u003c');
+for(const route of accountRoutes)await emit(route,renderAccountPage(route,{base,stateJSON}));
+await emit('/checkout',redirect(base+'/cart/'));
+
 await emit('/admin',redirect(hosted+'/admin','Открыть редактор UTRO'));
 await writeFile(join(out,'404.html'),`<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UTRO — страница не найдена</title><h1>Страница не найдена</h1><a href="${base}/">На главную UTRO</a></html>`);
 await writeFile(join(out,'build-info.json'),JSON.stringify({brand:'UTRO',basePath:base,routes:[...routes.keys()],commit:process.env.GITHUB_SHA||null},null,2));
