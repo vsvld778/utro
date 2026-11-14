@@ -33,6 +33,7 @@ function htmlURLs(html){
  .replace(/(\ssrcset=)(["'])(.*?)\2/g,(_,prefix,quote,value)=>prefix+quote+value.replace(/(^|[\s,])(\/(?!\/)[^\s,]+)/g,(_,sep,url)=>sep+withBase(url))+quote));
 }
 async function emit(route,html){
+ html=html.replace(/(href="[^"]*\/account\.css)(?:\?[^"]*)?"/g,'$1?v=utro-cyan-20261114"');
  const segments=decodeURIComponent(route).split('/').filter(Boolean);
  if(segments.some(s=>s==='..'||s==='.'||s.includes('\\')))throw Error('Unsafe route');
  const file=join(out,...segments,'index.html');await mkdir(dirname(file),{recursive:true});await writeFile(file,html);
