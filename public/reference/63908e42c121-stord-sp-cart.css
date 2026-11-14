@@ -1,0 +1,754 @@
+/* Shipment Protection cart opt-in widget.
+   Ported from stord-shopify/extensions/stord-theme/assets/stord-shipment-protection.css.
+   The primary button's colors/box/typography are applied at runtime by
+   window.StordThemeButtonStyles at fidelity "full" (inheriting the host
+   theme's checkout CTA -- classes as well as computed properties, so the
+   theme's own pseudo-element chrome, :hover, and media queries apply
+   directly); the `.stord-sp-btn-fallback` variant is applied only when no
+   theme button can be resolved. The loading skeleton's placeholder button
+   is styled the same way at fidelity "geometry" (box only) so it matches
+   the real CTA's size without a fixed height. Modal rules back the terms
+   modal rendered by stord-sp-cart.js. */
+
+.stord-sp-widget {
+  margin-bottom: 0.75rem;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.stord-sp-widget * {
+  box-sizing: border-box;
+}
+
+.stord-sp-widget-row {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  gap: 1rem;
+  /* Reserve the title-row height so the skeleton and rendered title occupy the
+     same box (no layout shift on swap). */
+  min-height: 1.5em;
+}
+
+.stord-sp-widget-row:last-of-type {
+  border-bottom: none;
+}
+
+.stord-sp-widget-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+/* Text roles. The theme's type arrives as --stord-sp-<role>-* custom
+   properties on the block (stord-sp-cart.js, View.readThemeTokens); each
+   rule falls back to the block's own type when a property is missing. Every
+   size is `min()` with the CTA's, so no text outgrows the button. */
+.stord-sp-block .stord-sp-widget-title {
+  font-family: var(--stord-sp-title-font-family, inherit);
+  font-size: min(
+    var(--stord-sp-title-font-size, 1em),
+    var(--stord-sp-cta-font-size, 1em)
+  ) !important;
+  font-weight: var(--stord-sp-title-font-weight, normal);
+  font-style: var(--stord-sp-title-font-style, inherit);
+  letter-spacing: var(--stord-sp-title-letter-spacing, inherit);
+  text-transform: var(--stord-sp-title-text-transform, inherit);
+}
+
+.stord-sp-info-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+/* Isolation. Cart apps style the elements inside their checkout area with
+   descendant selectors (`.footer span`, `.footer p`, `.footer a`), which
+   outrank a single class. The box and decoration of the block's own text
+   elements are reset with `!important`, so they read the same in any host.
+   Layout stays ours; only type follows the brand (see the token rules). */
+.stord-sp-block
+  :is(
+    .stord-sp-widget-title,
+    .stord-sp-widget-total,
+    .stord-sp-widget-message,
+    .stord-sp-link-secondary
+  ) {
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  text-indent: 0 !important;
+  float: none !important;
+}
+
+.stord-sp-block
+  :is(
+    .stord-sp-widget-title,
+    .stord-sp-widget-message,
+    .stord-sp-widget-total
+  ) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-decoration: none !important;
+}
+
+.stord-sp-block
+  :is(
+    .stord-sp-widget-title,
+    .stord-sp-widget-message,
+    .stord-sp-widget-total
+  ):not(.is-loading) {
+  background: none !important;
+}
+
+/* Cart apps often style every `button` inside their checkout area with a
+   descendant selector (for example `.footer button { background: #000;
+   padding: 16px }`), which outranks a single class. The icon box is reset
+   with `!important` so it stays a small bare icon in any host. */
+.stord-sp-widget .stord-sp-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1em !important;
+  max-width: 1.1em !important;
+  min-width: 1.1em !important;
+  flex: 0 0 auto;
+  height: 1.1em !important;
+  margin: 0;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: none !important;
+  box-shadow: none;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.55;
+}
+
+.stord-sp-widget .stord-sp-info-icon:hover {
+  opacity: 0.85;
+}
+
+.stord-sp-widget .stord-sp-info-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.stord-sp-block .stord-sp-widget-total {
+  font-family: var(--stord-sp-price-font-family, inherit);
+  font-size: min(
+    var(--stord-sp-price-font-size, 1em),
+    var(--stord-sp-cta-font-size, 1em)
+  ) !important;
+  font-weight: var(--stord-sp-price-font-weight, normal);
+  font-style: var(--stord-sp-price-font-style, inherit);
+  letter-spacing: var(--stord-sp-price-letter-spacing, inherit);
+  text-transform: var(--stord-sp-price-text-transform, inherit);
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+/* Re-price loading: shimmer ONLY the price in place; the rest of the widget
+   stays put (no full-widget skeleton swap), so a cart change is smooth. */
+.stord-sp-widget-total.is-loading {
+  display: inline-block;
+  min-width: 3.5rem;
+  height: 1em;
+  border-radius: 4px;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.06) 25%,
+    rgba(0, 0, 0, 0.12) 50%,
+    rgba(0, 0, 0, 0.06) 75%
+  );
+  background-size: 200% 100%;
+  animation: stord-sp-shimmer 1.5s ease-in-out infinite;
+}
+
+.stord-sp-widget-body {
+  padding: 0;
+}
+
+.stord-sp-block .stord-sp-widget-message {
+  margin: 0;
+  /* The brand's caption size, never above the title or the CTA. */
+  font-size: min(
+    var(--stord-sp-caption-font-size, 0.85em),
+    var(--stord-sp-title-font-size, 1em),
+    var(--stord-sp-cta-font-size, 1em)
+  ) !important;
+  opacity: 0.75;
+  color: inherit;
+  text-align: left;
+}
+
+.stord-sp-block {
+  /* The host's footer may set a large font size. The block never passes the
+     CTA's. */
+  font-size: min(1em, var(--stord-sp-cta-font-size, 1em));
+  /* Set only when the checkout area is pinned over the cart with no
+     background of its own (View.surfaceBackground). */
+  background: var(--stord-sp-surface-bg, transparent);
+  /* Set only when the inherited color is hard to read on what is behind the
+     block (View.readableTextColor). */
+  color: var(--stord-sp-text-color, inherit);
+  width: 100%;
+  min-width: 100%;
+  /* `auto` basis, never a percentage: this block mounts into whatever flex
+     container hosts the theme's checkout button, and in a COLUMN container
+     (Rebuy Smart Cart's flyout footer) a percentage flex-basis resolves
+     against HEIGHT -- inflating the block past its content, overflowing the
+     footer, and shoving the wallet/accelerated-checkout buttons below the
+     footer's visible bottom. `width`/`min-width` above already give full
+     width in a row container, which is what the old `0 0 100%` was for. */
+  flex: 0 0 auto;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  /* Shared floor for the CTA, its fallback, and the loading skeleton's
+     placeholder button -- so all three match even when no theme ref
+     resolves. The real CTA and skeleton normally grow past this via the
+     host theme's own padding/min-height, copied at runtime. */
+  --stord-sp-cta-min-h: 2.75rem;
+}
+
+.stord-sp-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Only separates the CTA from the secondary link. The space around the CTA
+     is the native button's own margin, copied onto it at runtime. */
+  gap: 0.5rem;
+  margin: 0;
+}
+
+/* The decorated wrapper the native checkout button was hidden inside (see
+   Logic.isDecoratedWrapper / View.resolveCheckoutHost in stord-sp-cart.js).
+   It isn't emptied -- the hidden native button is still inside it -- so it
+   must stop painting its own chrome here, or it leaves a stray shadow/border
+   bar next to our sibling widget. The chrome itself is reproduced on our
+   own CTA via a shallow clone of this same wrapper (View._applyChromeWrapper)
+   carrying the theme's classes, not a copy of this rule. */
+.stord-sp-chrome-hidden {
+  display: none !important;
+}
+
+.stord-sp-checkout-error {
+  color: #c00;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.stord-sp-checkout-error a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Size, spacing, colors, borders, radius, and typography all come from the
+   native checkout button at runtime (inline, fidelity "full"), so this rule
+   sets none of them. A fixed width or min-height here would override the
+   theme's real button size. The fixed values live on the fallback variant,
+   which applies only when no theme button can be resolved. */
+.stord-sp-btn-primary {
+  cursor: pointer;
+}
+
+/* StordThemeButtonStyles never copies `outline` (copying the ref's usual
+   base `none` would kill the keyboard focus ring), so it's declared here. */
+.stord-sp-btn-primary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.stord-sp-btn-primary.stord-sp-btn-fallback {
+  display: block;
+  width: 100%;
+  min-height: var(--stord-sp-cta-min-h, 2.75rem);
+  padding: 1em 1.25em;
+  border-radius: 30px;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+/* No ::before/::after suppression here on purpose: the CTA carries the
+   theme's own classes at runtime (StordThemeButtonStyles, fidelity "full"),
+   so the theme's own `.button::before/::after` chrome -- a border ring, an
+   offset shadow, whatever the theme draws -- applies directly. A blanket
+   `content: none !important` used to live here and was the reason the CTA
+   looked flatter/border-less than the button it replaced.
+
+   Known, accepted residual risk: the borrowed class isn't guaranteed to be
+   checkout-specific. If a theme's ref-finder match is a generic class shared
+   with buttons that normally carry a short label, a pseudo-element sized/
+   positioned for that short label (an icon, an arrow) can render off-position
+   against "CHECKOUT WITH PROTECTION" -- longer than what the rule was tuned
+   for. There is no runtime guard for this; restoring the blanket suppression
+   would fix it by giving up the exact-clone look this CSS exists to produce,
+   which is the wrong trade. If a specific theme hits this, the merchant-facing
+   remedy is the `sp_checkout_button_selector` App Embed override (point it at
+   a more specific, checkout-only class) -- not a code change here. */
+
+.stord-sp-btn-primary.stord-sp-btn-fallback:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Cart apps often style every link inside their checkout area with a
+   descendant selector (for example `.button-wrap a { font-size: 10px;
+   padding: 7px 14px }`), which outranks a single class. Text size, weight,
+   padding, and underline use `!important` so the link reads the same in any
+   host. */
+.stord-sp-block .stord-sp-link-secondary {
+  background: none;
+  border: none;
+  padding: 0 !important;
+  /* View.readThemeTokens sets the --stord-sp-link-* properties from the
+     brand's own "continue shopping" link; without them the link follows the
+     block. */
+  font-family: var(--stord-sp-link-font-family, inherit);
+  font-size: min(
+    var(--stord-sp-link-font-size, 0.85em),
+    var(--stord-sp-cta-font-size, 1em)
+  ) !important;
+  font-weight: var(--stord-sp-link-font-weight, inherit) !important;
+  font-style: var(--stord-sp-link-font-style, inherit);
+  letter-spacing: var(--stord-sp-link-letter-spacing, inherit);
+  text-transform: var(--stord-sp-link-text-transform, inherit);
+  text-decoration: underline !important;
+  color: inherit;
+  /* Solid (not the legacy's 0.75) â deliberately darker than legacy per design
+     review; black text at full opacity, matching the legacy widget's hover state. */
+  opacity: 1;
+  cursor: pointer;
+  align-self: center;
+}
+
+.stord-sp-block .stord-sp-link-secondary:hover {
+  opacity: 1;
+  text-decoration: underline !important;
+}
+
+/* Native <dialog> for top-layer promotion (beats any host z-index, even
+   another top-layer dialog) â these rules undo its default box model
+   (bordered, centered, fit-content) to keep the old full-viewport look. */
+.stord-sp-modal-overlay {
+  position: fixed;
+  inset: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  background: transparent;
+  color: inherit;
+  z-index: 9998;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.stord-sp-modal-overlay::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.stord-sp-modal-overlay.is-open {
+  display: flex;
+}
+
+/* No showModal() (old Safari etc.) falls back to a fixed overlay â beats
+   the highest known drawer z-index in the wild (Rebuy Smart Cart's
+   backdrop: 2147483637) directly, since there's no top layer to use. */
+.stord-sp-modal-overlay.stord-sp-modal-fallback {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2147483647;
+}
+
+.stord-sp-modal {
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stord-sp-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.stord-sp-modal-title {
+  font-family: inherit;
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.stord-sp-modal-close {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 1;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.stord-sp-modal-close:hover {
+  opacity: 1;
+}
+
+/* Redesigned modal only â legacy U-PIC keeps the plain header above,
+   unchanged. */
+.stord-sp-modal-band {
+  position: relative;
+  overflow: hidden;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 22px;
+  background: #f5f5f5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.stord-sp-modal-band-clouds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 46%;
+  pointer-events: none;
+}
+
+.stord-sp-modal-band-cloud {
+  position: absolute;
+  opacity: 0.85;
+}
+
+.stord-sp-modal-band-cloud-1 {
+  width: 96%;
+  right: -6%;
+  bottom: -16%;
+}
+
+.stord-sp-modal-band-cloud-2 {
+  width: 72%;
+  right: 24%;
+  bottom: -40%;
+  opacity: 0.7;
+}
+
+.stord-sp-modal-band-cloud-3 {
+  width: 58%;
+  right: 8%;
+  top: -2%;
+  opacity: 0.6;
+}
+
+.stord-sp-modal-band-text {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  min-width: 0;
+  max-width: 62%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stord-sp-modal-band-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.stord-sp-modal-band-title svg {
+  flex-shrink: 0;
+}
+
+.stord-sp-modal-band-lead {
+  font-size: 0.95em;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.stord-sp-modal-band-boxes {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 172px;
+  height: 172px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(51, 54, 255, 0.16));
+}
+
+.stord-sp-modal-band-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1.5px #3336ff;
+  color: #3336ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  font-size: 1.15em;
+}
+
+.stord-sp-modal-band-close:hover {
+  background: rgba(51, 54, 255, 0.08);
+}
+
+.stord-sp-modal-body {
+  padding: 1.25rem;
+  overflow-y: auto;
+  font-size: 1em;
+}
+
+.stord-sp-modal-body p {
+  margin: 0 0 1rem 0;
+}
+
+.stord-sp-modal-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.stord-sp-modal-body strong {
+  font-weight: 600;
+}
+
+.stord-sp-modal-body ol {
+  margin: 0 0 1rem 0;
+  padding-left: 1.25rem;
+}
+
+.stord-sp-modal-body li {
+  margin-bottom: 0.5rem;
+}
+
+.stord-sp-modal-body .stord-sp-modal-small {
+  font-size: 0.95em;
+  opacity: 0.65;
+}
+
+.stord-sp-modal-body a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.stord-sp-modal-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stord-sp-modal-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.stord-sp-modal-benefit-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-top: 0.125rem;
+  border-radius: 999px;
+  background: rgba(51, 54, 255, 0.08);
+  color: #3336ff;
+}
+
+.stord-sp-modal-benefit-text p {
+  margin: 0;
+}
+
+.stord-sp-modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 14px 22px;
+  background: #fafafa;
+  flex-shrink: 0;
+}
+
+.stord-sp-modal-footer-line {
+  font-size: 0.9em;
+  opacity: 0.65;
+  text-align: center;
+  margin: 0;
+}
+
+.stord-sp-modal-footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@keyframes stord-sp-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.stord-sp-skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.06) 25%,
+    rgba(0, 0, 0, 0.12) 50%,
+    rgba(0, 0, 0, 0.06) 75%
+  );
+  background-size: 200% 100%;
+  animation: stord-sp-shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.stord-sp-skeleton-title {
+  height: 1em;
+  flex: 1;
+  max-width: 180px;
+}
+
+.stord-sp-skeleton-price {
+  height: 1em;
+  width: 4rem;
+}
+
+.stord-sp-skeleton-message {
+  height: 0.85em;
+  width: 90%;
+  margin: 0 0 0.4rem 0;
+}
+
+.stord-sp-skeleton-message-last {
+  width: 55%;
+  margin: 0;
+}
+
+.stord-sp-skeleton-btn {
+  /* Sized by the SAME theme-copied box as the real CTA (styleCTA styles this
+     node too, at fidelity "geometry" -- padding/min-height/border/radius/
+     font-metrics only): the skeleton and the widget come from one factory
+     reading one reference, so their boxes match by construction rather than
+     a guessed number. A geometry pass that misses retries on the next
+     idempotent mount pass, budget-limited by CTA_STYLE_MAX_ATTEMPTS
+     (stord-sp-cart.js) -- min-height is the DOCUMENTED TERMINAL STATE once
+     that budget is spent (or before the first successful pass), not a
+     leftover. The labelled span keeps the exact same multi-line wrap
+     behavior as the real CTA's text, just invisible. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: var(--stord-sp-cta-min-h, 2.75rem);
+  padding: 0 1.25em;
+  border-radius: 4px;
+  color: transparent;
+}
+
+.stord-sp-skeleton-link {
+  height: 1em;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  .stord-sp-modal-overlay {
+    padding: 0.75rem;
+  }
+
+  .stord-sp-modal {
+    max-width: 100%;
+    max-height: 85vh;
+  }
+
+  .stord-sp-modal-header {
+    padding: 0.875rem 1rem;
+  }
+
+  .stord-sp-modal-title {
+    font-size: 1.0625em;
+  }
+
+  .stord-sp-modal-band {
+    min-height: 0;
+    padding: 16px 44px 16px 16px;
+  }
+
+  .stord-sp-modal-band-text {
+    max-width: 100%;
+  }
+
+  .stord-sp-modal-band-boxes {
+    display: none;
+  }
+
+  .stord-sp-modal-band-clouds {
+    width: 60%;
+  }
+
+  .stord-sp-modal-body {
+    padding: 1rem;
+  }
+
+  .stord-sp-modal-body .stord-sp-modal-small {
+    font-size: 15px;
+  }
+
+  .stord-sp-modal-footer {
+    padding: 0.875rem 1rem;
+  }
+}

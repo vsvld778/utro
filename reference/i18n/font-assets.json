@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ru-inter-400.ttf",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf",
+    "family": "Inter",
+    "weight": "400"
+  },
+  {
+    "name": "ru-inter-500.ttf",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf",
+    "family": "Inter",
+    "weight": "500"
+  },
+  {
+    "name": "ru-inter-700.ttf",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf",
+    "family": "Inter",
+    "weight": "700"
+  },
+  {
+    "name": "ru-montserrat-900.ttf",
+    "source": "https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf",
+    "family": "Montserrat",
+    "weight": "900"
+  }
+]

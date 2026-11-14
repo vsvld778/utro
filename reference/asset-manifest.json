@@ -1,0 +1,786 @@
+[
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Undo-5-pack.jpg?v=1782497229",
+    "file": "be35ee22aca6-Undo-5-pack.jpg",
+    "local": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+    "status": "ok",
+    "bytes": 374870
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/716pIetA1CL._AC_SL1500.jpg?v=1765858972",
+    "file": "f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+    "local": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+    "status": "ok",
+    "bytes": 169019
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Ingredients_UNDO_Prealcohol_gummies.png?v=1765858972",
+    "file": "5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+    "local": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+    "status": "ok",
+    "bytes": 195587
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/4_pack_supplement_facts.png?v=1765858972",
+    "file": "c3ee5f5e09c7-4_pack_supplement_facts.png",
+    "local": "/reference/c3ee5f5e09c7-4_pack_supplement_facts.png",
+    "status": "ok",
+    "bytes": 322366
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/UNDNO_Gummies_-_Single_Pouch_1.png?v=1765858972",
+    "file": "d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+    "local": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+    "status": "ok",
+    "bytes": 557789
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_lifestyle-3.jpg?v=1765858972",
+    "file": "12bd7300259f-undo_lifestyle-3.jpg",
+    "local": "/reference/12bd7300259f-undo_lifestyle-3.jpg",
+    "status": "ok",
+    "bytes": 280814
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/UNDO_GUMMIES_GIRLS_PIER.jpg?v=1765858972",
+    "file": "6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+    "local": "/reference/6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+    "status": "ok",
+    "bytes": 303778
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/UNDO_GUMMIES_LIPS.jpg?v=1765858972",
+    "file": "72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+    "local": "/reference/72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+    "status": "ok",
+    "bytes": 293013
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Undo-15-pack.jpg?v=1782497243",
+    "file": "2192db01e139-Undo-15-pack.jpg",
+    "local": "/reference/2192db01e139-Undo-15-pack.jpg",
+    "status": "ok",
+    "bytes": 418748
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg?v=1765858925",
+    "file": "c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+    "local": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+    "status": "ok",
+    "bytes": 154033
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/81uPZc8ua2L._AC_SL1500.jpg?v=1774376655",
+    "file": "e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+    "local": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+    "status": "ok",
+    "bytes": 241148
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/81mhxNFMbdL._AC_SL1500.jpg?v=1774376655",
+    "file": "ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+    "local": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+    "status": "ok",
+    "bytes": 232303
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_pre_alcohol_gummies-1.jpg?v=1774376655",
+    "file": "f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+    "local": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+    "status": "ok",
+    "bytes": 123220
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Undo-30-pack.jpg?v=1782498171",
+    "file": "635663933739-Undo-30-pack.jpg",
+    "local": "/reference/635663933739-Undo-30-pack.jpg",
+    "status": "ok",
+    "bytes": 355621
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css",
+    "file": "a7f74f99e018-accelerated-checkout-backwards-compat.css",
+    "local": "/reference/a7f74f99e018-accelerated-checkout-backwards-compat.css",
+    "status": "ok",
+    "bytes": 13728
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/compiled_assets/styles.css?v=47280431291375099781791467457",
+    "file": "4b9e9582b8b5-styles.css",
+    "local": "/reference/4b9e9582b8b5-styles.css",
+    "status": "ok",
+    "bytes": 20180
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/base.bundle.css?v=110398071207616062691791467457",
+    "file": "a3f3029b29ee-base.bundle.css",
+    "local": "/reference/a3f3029b29ee-base.bundle.css",
+    "status": "ok",
+    "bytes": 99810
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/ESA.css?v=119046570308727256041791467457",
+    "file": "751d9cef5852-ESA.css",
+    "local": "/reference/751d9cef5852-ESA.css",
+    "status": "ok",
+    "bytes": 1321
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/modules-photoswipe.bundle.css?v=177954764007793069931791467457",
+    "file": "695db4285c6f-modules-photoswipe.bundle.css",
+    "local": "/reference/695db4285c6f-modules-photoswipe.bundle.css",
+    "status": "ok",
+    "bytes": 6187
+  },
+  {
+    "url": "https://cdn.shopify.com/extensions/01a1b143-ea7b-7e92-b287-3c0c8e4691e5/stord-commerce-93/assets/stord-sp-cart.css",
+    "file": "63908e42c121-stord-sp-cart.css",
+    "local": "/reference/63908e42c121-stord-sp-cart.css",
+    "status": "ok",
+    "bytes": 19497
+  },
+  {
+    "url": "https://cdn.shopify.com/extensions/01a1b143-ea7b-7e92-b287-3c0c8e4691e5/stord-commerce-93/assets/add-to-order.css",
+    "file": "13c70fa16042-add-to-order.css",
+    "local": "/reference/13c70fa16042-add-to-order.css",
+    "status": "ok",
+    "bytes": 1898
+  },
+  {
+    "url": "https://cdn.shopify.com/extensions/01a1b143-ea7b-7e92-b287-3c0c8e4691e5/stord-commerce-93/assets/stord-free-shipping-bar.css",
+    "file": "c08d6bf54990-stord-free-shipping-bar.css",
+    "local": "/reference/c08d6bf54990-stord-free-shipping-bar.css",
+    "status": "ok",
+    "bytes": 1091
+  },
+  {
+    "url": "https://cdn.shopify.com/extensions/01a1b143-ea7b-7e92-b287-3c0c8e4691e5/stord-commerce-93/assets/stord-upsell-widget.css",
+    "file": "e993340faa0f-stord-upsell-widget.css",
+    "local": "/reference/e993340faa0f-stord-upsell-widget.css",
+    "status": "ok",
+    "bytes": 13392
+  },
+  {
+    "url": "https://cdn.shopify.com/extensions/01a1b143-ea7b-7e92-b287-3c0c8e4691e5/stord-commerce-93/assets/stord-upsell-tile.css",
+    "file": "b82511f48bc4-stord-upsell-tile.css",
+    "local": "/reference/b82511f48bc4-stord-upsell-tile.css",
+    "status": "ok",
+    "bytes": 6017
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_n4.db86542ae5e1596dbdb28c279ae6c2086c4c5bfa.woff2",
+    "file": "579499501f6e-instrumentsans_n4.db86542ae5e1596dbdb28c279ae6c2086c4c5bfa.woff2",
+    "local": "/reference/579499501f6e-instrumentsans_n4.db86542ae5e1596dbdb28c279ae6c2086c4c5bfa.woff2",
+    "status": "ok",
+    "bytes": 30380
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_n4.510f1b081e58d08c30978f465518799851ef6d8b.woff",
+    "file": "7ff61f522884-instrumentsans_n4.510f1b081e58d08c30978f465518799851ef6d8b.woff",
+    "local": "/reference/7ff61f522884-instrumentsans_n4.510f1b081e58d08c30978f465518799851ef6d8b.woff",
+    "status": "ok",
+    "bytes": 30316
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/archivo_black/archivoblack_n4.b08d53f45e5ceb17a38677219b15fcdd9c5f3519.woff2",
+    "file": "8eb0e2d73be5-archivoblack_n4.b08d53f45e5ceb17a38677219b15fcdd9c5f3519.woff2",
+    "local": "/reference/8eb0e2d73be5-archivoblack_n4.b08d53f45e5ceb17a38677219b15fcdd9c5f3519.woff2",
+    "status": "ok",
+    "bytes": 25480
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/archivo_black/archivoblack_n4.f60f1927c27470e666802dedb7cb371f393082b1.woff",
+    "file": "b6fca17c2d27-archivoblack_n4.f60f1927c27470e666802dedb7cb371f393082b1.woff",
+    "local": "/reference/b6fca17c2d27-archivoblack_n4.f60f1927c27470e666802dedb7cb371f393082b1.woff",
+    "status": "ok",
+    "bytes": 25472
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_n7.e4ad9032e203f9a0977786c356573ced65a7419a.woff2",
+    "file": "baf3aca5c8d5-instrumentsans_n7.e4ad9032e203f9a0977786c356573ced65a7419a.woff2",
+    "local": "/reference/baf3aca5c8d5-instrumentsans_n7.e4ad9032e203f9a0977786c356573ced65a7419a.woff2",
+    "status": "ok",
+    "bytes": 31096
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_n7.b9e40f166fb7639074ba34738101a9d2990bb41a.woff",
+    "file": "5dc47939b5d1-instrumentsans_n7.b9e40f166fb7639074ba34738101a9d2990bb41a.woff",
+    "local": "/reference/5dc47939b5d1-instrumentsans_n7.b9e40f166fb7639074ba34738101a9d2990bb41a.woff",
+    "status": "ok",
+    "bytes": 31168
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_i4.028d3c3cd8d085648c808ceb20cd2fd1eb3560e5.woff2",
+    "file": "af0402cd1b0e-instrumentsans_i4.028d3c3cd8d085648c808ceb20cd2fd1eb3560e5.woff2",
+    "local": "/reference/af0402cd1b0e-instrumentsans_i4.028d3c3cd8d085648c808ceb20cd2fd1eb3560e5.woff2",
+    "status": "ok",
+    "bytes": 32040
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_i4.7e90d82df8dee29a99237cd19cc529d2206706a2.woff",
+    "file": "d2b2cbdbf18e-instrumentsans_i4.7e90d82df8dee29a99237cd19cc529d2206706a2.woff",
+    "local": "/reference/d2b2cbdbf18e-instrumentsans_i4.7e90d82df8dee29a99237cd19cc529d2206706a2.woff",
+    "status": "ok",
+    "bytes": 32028
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_i7.d6063bb5d8f9cbf96eace9e8801697c54f363c6a.woff2",
+    "file": "1e634a64bf3f-instrumentsans_i7.d6063bb5d8f9cbf96eace9e8801697c54f363c6a.woff2",
+    "local": "/reference/1e634a64bf3f-instrumentsans_i7.d6063bb5d8f9cbf96eace9e8801697c54f363c6a.woff2",
+    "status": "ok",
+    "bytes": 32768
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/instrument_sans/instrumentsans_i7.ce33afe63f8198a3ac4261b826b560103542cd36.woff",
+    "file": "ea77e1116402-instrumentsans_i7.ce33afe63f8198a3ac4261b826b560103542cd36.woff",
+    "local": "/reference/ea77e1116402-instrumentsans_i7.ce33afe63f8198a3ac4261b826b560103542cd36.woff",
+    "status": "ok",
+    "bytes": 32756
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Untitled_design_c27e1d01-72b5-40ab-9d43-c31bdc4ae677.png?v=1758061537",
+    "file": "4584cc4c21f2-Untitled_design_c27e1d01-72b5-40ab-9d43-c31bdc4ae677.png",
+    "local": "/reference/4584cc4c21f2-Untitled_design_c27e1d01-72b5-40ab-9d43-c31bdc4ae677.png",
+    "status": "ok",
+    "bytes": 50213
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/3-pack.jpg?v=1786241117",
+    "file": "ae8d133d21eb-3-pack.jpg",
+    "local": "/reference/ae8d133d21eb-3-pack.jpg",
+    "status": "ok",
+    "bytes": 197531
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-sparkle.svg?v=111154965534182808151791467457",
+    "file": "1a08c8c014fc-icon-sparkle.svg",
+    "local": "/reference/1a08c8c014fc-icon-sparkle.svg",
+    "status": "ok",
+    "bytes": 429
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/the_science_hero_v3.jpg?v=1781054853",
+    "file": "39be3e37fb78-the_science_hero_v3.jpg",
+    "local": "/reference/39be3e37fb78-the_science_hero_v3.jpg",
+    "status": "ok",
+    "bytes": 768428
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2037.jpg?v=1782308556",
+    "file": "3ea2a7140efb-2037.jpg",
+    "local": "/reference/3ea2a7140efb-2037.jpg",
+    "status": "ok",
+    "bytes": 426347
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2030_1_ca9e32ab-8ead-4005-8490-afc72eed0c36.jpg?v=1782308598",
+    "file": "b5a81a1d143b-2030_1_ca9e32ab-8ead-4005-8490-afc72eed0c36.jpg",
+    "local": "/reference/b5a81a1d143b-2030_1_ca9e32ab-8ead-4005-8490-afc72eed0c36.jpg",
+    "status": "ok",
+    "bytes": 231308
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2036.jpg?v=1782308598",
+    "file": "b89746a3ec6f-2036.jpg",
+    "local": "/reference/b89746a3ec6f-2036.jpg",
+    "status": "ok",
+    "bytes": 109602
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2035_1.jpg?v=1782308598",
+    "file": "2b89ee637df8-2035_1.jpg",
+    "local": "/reference/2b89ee637df8-2035_1.jpg",
+    "status": "ok",
+    "bytes": 262925
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2031_1_5e713a3f-3a27-409d-b495-fc1fe0eddfef.jpg?v=1782308598",
+    "file": "c59c555d7f6e-2031_1_5e713a3f-3a27-409d-b495-fc1fe0eddfef.jpg",
+    "local": "/reference/c59c555d7f6e-2031_1_5e713a3f-3a27-409d-b495-fc1fe0eddfef.jpg",
+    "status": "ok",
+    "bytes": 319412
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2034_1_d54ede78-99a2-4a66-a638-07f9dbd1038d.jpg?v=1782308598",
+    "file": "067e59272ac7-2034_1_d54ede78-99a2-4a66-a638-07f9dbd1038d.jpg",
+    "local": "/reference/067e59272ac7-2034_1_d54ede78-99a2-4a66-a638-07f9dbd1038d.jpg",
+    "status": "ok",
+    "bytes": 295326
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-non-gmo-custom.svg?v=111570077616187208931791467457",
+    "file": "53714e86cd30-icon-non-gmo-custom.svg",
+    "local": "/reference/53714e86cd30-icon-non-gmo-custom.svg",
+    "status": "ok",
+    "bytes": 3096
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-gluten-free-custom.svg?v=84984201090699973251791467457",
+    "file": "20748dd7663e-icon-gluten-free-custom.svg",
+    "local": "/reference/20748dd7663e-icon-gluten-free-custom.svg",
+    "status": "ok",
+    "bytes": 1647
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-no-artificial-flavors.svg?v=179981640425724337031791467457",
+    "file": "cbeeddf5b550-icon-no-artificial-flavors.svg",
+    "local": "/reference/cbeeddf5b550-icon-no-artificial-flavors.svg",
+    "status": "ok",
+    "bytes": 1828
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-all-natural.svg?v=115577095724069330521791467457",
+    "file": "493383b3ec05-icon-all-natural.svg",
+    "local": "/reference/493383b3ec05-icon-all-natural.svg",
+    "status": "ok",
+    "bytes": 1028
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/grain-bg.jpg?v=1781055108",
+    "file": "a700abc9ed29-grain-bg.jpg",
+    "local": "/reference/a700abc9ed29-grain-bg.jpg",
+    "status": "ok",
+    "bytes": 650476
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/UNDO_black.png?v=1781055043",
+    "file": "56be24b02849-UNDO_black.png",
+    "local": "/reference/56be24b02849-UNDO_black.png",
+    "status": "ok",
+    "bytes": 101266
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2030.jpg?v=1781726274",
+    "file": "d9e2c07d16d3-2030.jpg",
+    "local": "/reference/d9e2c07d16d3-2030.jpg",
+    "status": "ok",
+    "bytes": 364258
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2031.jpg?v=1781726274",
+    "file": "6297559ca910-2031.jpg",
+    "local": "/reference/6297559ca910-2031.jpg",
+    "status": "ok",
+    "bytes": 762334
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2034.jpg?v=1781726276",
+    "file": "f6709b7a363e-2034.jpg",
+    "local": "/reference/f6709b7a363e-2034.jpg",
+    "status": "ok",
+    "bytes": 284282
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2035.jpg?v=1781726274",
+    "file": "4904f8deddf3-2035.jpg",
+    "local": "/reference/4904f8deddf3-2035.jpg",
+    "status": "ok",
+    "bytes": 405399
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2030_1.jpg?v=1782307742",
+    "file": "550dc81097d6-2030_1.jpg",
+    "local": "/reference/550dc81097d6-2030_1.jpg",
+    "status": "ok",
+    "bytes": 219701
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2031_1.jpg?v=1782307740",
+    "file": "93dcd3c164a8-2031_1.jpg",
+    "local": "/reference/93dcd3c164a8-2031_1.jpg",
+    "status": "ok",
+    "bytes": 336393
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/2034_1.jpg?v=1782307736",
+    "file": "fb5a9598b421-2034_1.jpg",
+    "local": "/reference/fb5a9598b421-2034_1.jpg",
+    "status": "ok",
+    "bytes": 211845
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/pink_stars.svg?v=1779303631",
+    "file": "2e13ab00a356-pink_stars.svg",
+    "local": "/reference/2e13ab00a356-pink_stars.svg",
+    "status": "ok",
+    "bytes": 3676
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Badge.png?v=1783983418",
+    "file": "6e41617070c4-Badge.png",
+    "local": "/reference/6e41617070c4-Badge.png",
+    "status": "ok",
+    "bytes": 159269
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-gummies.svg?v=81452486823158023951791467457",
+    "file": "9c3c84ec6566-icon-gummies.svg",
+    "local": "/reference/9c3c84ec6566-icon-gummies.svg",
+    "status": "ok",
+    "bytes": 1886
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-usa-made.svg?v=7801406229650940531791467457",
+    "file": "a0cdb0bc99ae-icon-usa-made.svg",
+    "local": "/reference/a0cdb0bc99ae-icon-usa-made.svg",
+    "status": "ok",
+    "bytes": 9449
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-clinically-studied.svg?v=160710387716536557661791467457",
+    "file": "9d59c0eda032-icon-clinically-studied.svg",
+    "local": "/reference/9d59c0eda032-icon-clinically-studied.svg",
+    "status": "ok",
+    "bytes": 2494
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/t/32/assets/icon-money-back.svg?v=75093507082323916501791467457",
+    "file": "9c6cd087e6e6-icon-money-back.svg",
+    "local": "/reference/9c6cd087e6e6-icon-money-back.svg",
+    "status": "ok",
+    "bytes": 2593
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/UNDO_pierplay.jpg?v=1779393427",
+    "file": "8e17373e2269-UNDO_pierplay.jpg",
+    "local": "/reference/8e17373e2269-UNDO_pierplay.jpg",
+    "status": "ok",
+    "bytes": 349844
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/doctor-icon.svg?v=1779423931",
+    "file": "1c93f220d1f3-doctor-icon.svg",
+    "local": "/reference/1c93f220d1f3-doctor-icon.svg",
+    "status": "ok",
+    "bytes": 1929
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/science-icon.svg?v=1779423931",
+    "file": "37085a576211-science-icon.svg",
+    "local": "/reference/37085a576211-science-icon.svg",
+    "status": "ok",
+    "bytes": 3092
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/usa-icon.svg?v=1779423931",
+    "file": "ca7a955593f6-usa-icon.svg",
+    "local": "/reference/ca7a955593f6-usa-icon.svg",
+    "status": "ok",
+    "bytes": 9682
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/formula-icon.svg?v=1779423931",
+    "file": "d55d1e13f8dc-formula-icon.svg",
+    "local": "/reference/d55d1e13f8dc-formula-icon.svg",
+    "status": "ok",
+    "bytes": 1227
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/vegan-icon.svg?v=1779423931",
+    "file": "2e3b1299cdaa-vegan-icon.svg",
+    "local": "/reference/2e3b1299cdaa-vegan-icon.svg",
+    "status": "ok",
+    "bytes": 2060
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/PINK_UNDO_1.png?v=1779511474",
+    "file": "e00662583d53-PINK_UNDO_1.png",
+    "local": "/reference/e00662583d53-PINK_UNDO_1.png",
+    "status": "ok",
+    "bytes": 16653
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_pre_alcohol_gummies-10.jpg?v=1765858925",
+    "file": "2844872496f8-undo_pre_alcohol_gummies-10.jpg",
+    "local": "/reference/2844872496f8-undo_pre_alcohol_gummies-10.jpg",
+    "status": "ok",
+    "bytes": 136020
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/image-8.jpg?v=1779343885",
+    "file": "4bb7fe895384-image-8.jpg",
+    "local": "/reference/4bb7fe895384-image-8.jpg",
+    "status": "ok",
+    "bytes": 112305
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/blue-bg.jpg?v=1779410606",
+    "file": "92e3decf183e-blue-bg.jpg",
+    "local": "/reference/92e3decf183e-blue-bg.jpg",
+    "status": "ok",
+    "bytes": 168262
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_pre_alcohol_gummies-6.jpg?v=1759748442",
+    "file": "76399af5f4cd-undo_pre_alcohol_gummies-6.jpg",
+    "local": "/reference/76399af5f4cd-undo_pre_alcohol_gummies-6.jpg",
+    "status": "ok",
+    "bytes": 104818
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/IMG_0623_1.jpg?v=1782444585",
+    "file": "5cad16d79871-IMG_0623_1.jpg",
+    "local": "/reference/5cad16d79871-IMG_0623_1.jpg",
+    "status": "ok",
+    "bytes": 295424
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/IMG_5624_1.jpg?v=1782444578",
+    "file": "1a0b6e46c6b4-IMG_5624_1.jpg",
+    "local": "/reference/1a0b6e46c6b4-IMG_5624_1.jpg",
+    "status": "ok",
+    "bytes": 457857
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/IMG_0740_1.jpg?v=1782444578",
+    "file": "6027261e78c5-IMG_0740_1.jpg",
+    "local": "/reference/6027261e78c5-IMG_0740_1.jpg",
+    "status": "ok",
+    "bytes": 264009
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/IMG_8419_1.jpg?v=1782444578",
+    "file": "3acbeec48df6-IMG_8419_1.jpg",
+    "local": "/reference/3acbeec48df6-IMG_8419_1.jpg",
+    "status": "ok",
+    "bytes": 238373
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/IMG_1997_1.jpg?v=1782444585",
+    "file": "b2dbd51cae5f-IMG_1997_1.jpg",
+    "local": "/reference/b2dbd51cae5f-IMG_1997_1.jpg",
+    "status": "ok",
+    "bytes": 253035
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/UNDO_pierplay-42.jpg?v=1783642596",
+    "file": "773e45de799b-UNDO_pierplay-42.jpg",
+    "local": "/reference/773e45de799b-UNDO_pierplay-42.jpg",
+    "status": "ok",
+    "bytes": 416410
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/hero-bg.jpg?v=1781722293",
+    "file": "5214ab52b6f4-hero-bg.jpg",
+    "local": "/reference/5214ab52b6f4-hero-bg.jpg",
+    "status": "ok",
+    "bytes": 19677
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Mobile-hero.jpg?v=1779832890",
+    "file": "2c9c85d03abb-Mobile-hero.jpg",
+    "local": "/reference/2c9c85d03abb-Mobile-hero.jpg",
+    "status": "ok",
+    "bytes": 11674
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/liver-icon.svg?v=1779304916",
+    "file": "b6f741ff2257-liver-icon.svg",
+    "local": "/reference/b6f741ff2257-liver-icon.svg",
+    "status": "ok",
+    "bytes": 2762
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/brain-icon.svg?v=1779304916",
+    "file": "70511d4e521e-brain-icon.svg",
+    "local": "/reference/70511d4e521e-brain-icon.svg",
+    "status": "ok",
+    "bytes": 2460
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/hydration-icon.svg?v=1779304916",
+    "file": "a8400b04c1f2-hydration-icon.svg",
+    "local": "/reference/a8400b04c1f2-hydration-icon.svg",
+    "status": "ok",
+    "bytes": 11902
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo-gummies-pouch.png?v=1781722232",
+    "file": "0784b50bda41-undo-gummies-pouch.png",
+    "local": "/reference/0784b50bda41-undo-gummies-pouch.png",
+    "status": "ok",
+    "bytes": 358794
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/target-7-black.svg?v=1790713120",
+    "file": "cf6f1dbb066a-target-7-black.svg",
+    "local": "/reference/cf6f1dbb066a-target-7-black.svg",
+    "status": "ok",
+    "bytes": 3842
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/5.png-1.png?v=1779335352",
+    "file": "570c72d4d407-5.png-1.png",
+    "local": "/reference/570c72d4d407-5.png-1.png",
+    "status": "ok",
+    "bytes": 34452
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/abc_png.png?v=1779335332",
+    "file": "90946f83ba94-abc_png.png",
+    "local": "/reference/90946f83ba94-abc_png.png",
+    "status": "ok",
+    "bytes": 27473
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Raley_Supermarket_logo_black.svg?v=1783538857",
+    "file": "5de30b4b2d2c-Raley_Supermarket_logo_black.svg",
+    "local": "/reference/5de30b4b2d2c-Raley_Supermarket_logo_black.svg",
+    "status": "ok",
+    "bytes": 3704
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Harris_Teeter_d23e585f-c930-4883-b723-1d778f8f1367_png.png?v=1779335352",
+    "file": "8f6dea4c5f73-Harris_Teeter_d23e585f-c930-4883-b723-1d778f8f1367_png.png",
+    "local": "/reference/8f6dea4c5f73-Harris_Teeter_d23e585f-c930-4883-b723-1d778f8f1367_png.png",
+    "status": "ok",
+    "bytes": 25328
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/AMPM_bff9370a-1c73-451d-a88f-a83b9fd45f29_png.png?v=1779335351",
+    "file": "dc0dc5ef9bd8-AMPM_bff9370a-1c73-451d-a88f-a83b9fd45f29_png.png",
+    "local": "/reference/dc0dc5ef9bd8-AMPM_bff9370a-1c73-451d-a88f-a83b9fd45f29_png.png",
+    "status": "ok",
+    "bytes": 27983
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/circlek_png.png?v=1779335351",
+    "file": "dd20c6cc69c7-circlek_png.png",
+    "local": "/reference/dd20c6cc69c7-circlek_png.png",
+    "status": "ok",
+    "bytes": 22129
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Urban_Outfitters_logo.svg?v=1783538857",
+    "file": "0878763fda84-Urban_Outfitters_logo.svg",
+    "local": "/reference/0878763fda84-Urban_Outfitters_logo.svg",
+    "status": "ok",
+    "bytes": 5308
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/MGM_e22bc81a-af97-4d62-898d-a3ad6fa0985e_png.png?v=1779335351",
+    "file": "a7a194ebbdab-MGM_e22bc81a-af97-4d62-898d-a3ad6fa0985e_png.png",
+    "local": "/reference/a7a194ebbdab-MGM_e22bc81a-af97-4d62-898d-a3ad6fa0985e_png.png",
+    "status": "ok",
+    "bytes": 33235
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/7-eleven_png.png?v=1779335352",
+    "file": "ed32106979ed-7-eleven_png.png",
+    "local": "/reference/ed32106979ed-7-eleven_png.png",
+    "status": "ok",
+    "bytes": 21931
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Spencers_Logo.svg?v=1783538857",
+    "file": "84e74fcc34fe-Spencers_Logo.svg",
+    "local": "/reference/84e74fcc34fe-Spencers_Logo.svg",
+    "status": "ok",
+    "bytes": 6225
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/doordash_png.png?v=1779335351",
+    "file": "81deaea04cb3-doordash_png.png",
+    "local": "/reference/81deaea04cb3-doordash_png.png",
+    "status": "ok",
+    "bytes": 19505
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo-box.png?v=1779344125",
+    "file": "45cd707230ee-undo-box.png",
+    "local": "/reference/45cd707230ee-undo-box.png",
+    "status": "ok",
+    "bytes": 1015512
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/liver-icon_8440b125-81fc-4c0e-8b88-2361686def1c.svg?v=1779388764",
+    "file": "3659fe70f2c9-liver-icon_8440b125-81fc-4c0e-8b88-2361686def1c.svg",
+    "local": "/reference/3659fe70f2c9-liver-icon_8440b125-81fc-4c0e-8b88-2361686def1c.svg",
+    "status": "ok",
+    "bytes": 882
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/digestion-icon.svg?v=1779388764",
+    "file": "23f6beded243-digestion-icon.svg",
+    "local": "/reference/23f6beded243-digestion-icon.svg",
+    "status": "ok",
+    "bytes": 754
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/vitamins-icon.svg?v=1779388776",
+    "file": "c2e32d2d83c6-vitamins-icon.svg",
+    "local": "/reference/c2e32d2d83c6-vitamins-icon.svg",
+    "status": "ok",
+    "bytes": 1271
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/Electrolytes-icon.svg?v=1779388720",
+    "file": "38b937e3bb16-Electrolytes-icon.svg",
+    "local": "/reference/38b937e3bb16-Electrolytes-icon.svg",
+    "status": "ok",
+    "bytes": 441
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_lifestyle-10.jpg?v=1759748201",
+    "file": "9d3c973e66c3-undo_lifestyle-10.jpg",
+    "local": "/reference/9d3c973e66c3-undo_lifestyle-10.jpg",
+    "status": "ok",
+    "bytes": 150827
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_pre_alcohol_gummies-19.jpg?v=1759748221",
+    "file": "335c36eac5de-undo_pre_alcohol_gummies-19.jpg",
+    "local": "/reference/335c36eac5de-undo_pre_alcohol_gummies-19.jpg",
+    "status": "ok",
+    "bytes": 194816
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/files/undo_pre_alcohol_gummies-13.jpg?v=1759751342",
+    "file": "77e080e3fb74-undo_pre_alcohol_gummies-13.jpg",
+    "local": "/reference/77e080e3fb74-undo_pre_alcohol_gummies-13.jpg",
+    "status": "ok",
+    "bytes": 134852
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/merriweather/merriweather_n4.349a72bc63b970a8b7f00dc33f5bda2ec52f79cc.woff2",
+    "file": "f9ee37ac5db6-merriweather_n4.349a72bc63b970a8b7f00dc33f5bda2ec52f79cc.woff2",
+    "local": "/reference/f9ee37ac5db6-merriweather_n4.349a72bc63b970a8b7f00dc33f5bda2ec52f79cc.woff2",
+    "status": "ok",
+    "bytes": 338084
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/fonts/merriweather/merriweather_n4.5a396c75a89c25b516c9d3cb026490795288d821.woff",
+    "file": "8059c9ed572f-merriweather_n4.5a396c75a89c25b516c9d3cb026490795288d821.woff",
+    "local": "/reference/8059c9ed572f-merriweather_n4.5a396c75a89c25b516c9d3cb026490795288d821.woff",
+    "status": "ok",
+    "bytes": 338592
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shopifycloud/storefront/assets/storefront/policy-0e156355.css",
+    "file": "ac5f472548f3-policy-0e156355.css",
+    "local": "/reference/ac5f472548f3-policy-0e156355.css",
+    "status": "ok",
+    "bytes": 294
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/articles/undo_pre_alcohol_gummies-19.jpg?v=1758636170",
+    "file": "3d8d47c4af0d-undo_pre_alcohol_gummies-19.jpg",
+    "local": "/reference/3d8d47c4af0d-undo_pre_alcohol_gummies-19.jpg",
+    "status": "ok",
+    "bytes": 387961
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/articles/undo_pre_alcohol_gummies-12.jpg?v=1758636189",
+    "file": "5736374fc4a6-undo_pre_alcohol_gummies-12.jpg",
+    "local": "/reference/5736374fc4a6-undo_pre_alcohol_gummies-12.jpg",
+    "status": "ok",
+    "bytes": 166920
+  },
+  {
+    "url": "https://www.undogummies.com/cdn/shop/articles/undo_lifestyle-11.jpg?v=1758636205",
+    "file": "8e6c4fb5b508-undo_lifestyle-11.jpg",
+    "local": "/reference/8e6c4fb5b508-undo_lifestyle-11.jpg",
+    "status": "ok",
+    "bytes": 159388
+  }
+]

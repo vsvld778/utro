@@ -1,0 +1,477 @@
+.stord-upsell {
+  padding: 0;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+
+  /* Host-surface theming tokens. StordThemeSurfaceStyles (JS) tags this root
+     with data-stord-surface="dark" when the cart/drawer background behind the
+     widget is dark; the dark rule below flips the overlay direction and opaque
+     fills so the cards adapt to ANY host theme (light, dark, or branded)
+     instead of being hardcoded light. The light defaults here reproduce the
+     previous appearance exactly. Counterpart to the per-button inheritance in
+     stord-theme-button-styles.js. The overlay channel is an "r, g, b" triplet
+     so each element keeps its own alpha while only the direction flips. */
+  --stord-overlay-rgb: 0, 0, 0;
+  --stord-card-bg: #fff;
+  --stord-panel-bg: #fff;
+  --stord-badge-bg: #f5f5f5;
+
+  background: var(--stord-panel-bg);
+
+  /* Carousel sizing knobs. JS sets --per-view on the cart variant; both
+     variants inherit the tile/gap defaults. Container max-width is derived
+     from these so exactly per_view tiles fit at natural width. */
+  --stord-upsell-tile-width: 220px;
+  --stord-upsell-tile-gap: 1rem;
+  --stord-upsell-per-view: 3;
+}
+
+/* Dark / non-white host surface: lighten overlays instead of darkening them,
+   drop the opaque white card/panel fills to translucent lifts, and opt the
+   native variant <select> into dark rendering. Keyed off the attribute set by
+   StordThemeSurfaceStyles; absent the attribute, the light defaults apply. */
+.stord-upsell[data-stord-surface="dark"] {
+  --stord-overlay-rgb: 255, 255, 255;
+  --stord-card-bg: rgba(255, 255, 255, 0.07);
+  --stord-panel-bg: transparent;
+  --stord-badge-bg: rgba(255, 255, 255, 0.14);
+  color-scheme: dark;
+}
+
+.stord-upsell--cart {
+  margin-inline: 0;
+}
+
+/* Drawer variant: injected into the host theme's cart drawer at runtime.
+   The drawer is narrow (typically 320â420px), so we override the cart-page
+   container max-width and use smaller tiles. !important on the box-model
+   props because the cart-page rules above set --stord-upsell-* knobs and
+   we need to win the cascade inside the drawer regardless of order. */
+.stord-upsell--drawer {
+  margin: 0 !important;
+  padding: 0.5rem 0 0 !important;
+  border-radius: 0.5rem !important;
+  /* Bound to the parent (the drawer's items column). The cart-page rules
+     set a max-width derived from per-view Ã tile-width which can exceed
+     the drawer's width â force back to 100% and let the inner viewport
+     handle horizontal overflow with its native carousel scroll. */
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
+  /* Don't let the carousel push the drawer's line items off-screen. */
+  flex-shrink: 0;
+  /* Smaller carousel knobs: smaller tiles, tighter gap. */
+  --stord-upsell-tile-width: 130px;
+  --stord-upsell-tile-gap: 0.4rem;
+}
+
+/* Make sure every nested level can shrink below its content size so the
+   container respects the drawer's width even though tiles inside the
+   track are wider than the viewport. */
+.stord-upsell--drawer .stord-upsell__viewport,
+.stord-upsell--drawer .stord-upsell__track {
+  min-width: 0 !important;
+  max-width: 100%;
+}
+
+.stord-upsell--drawer .stord-upsell__viewport {
+  width: 100%;
+}
+
+.stord-upsell--drawer .stord-upsell__track {
+  width: 100%;
+}
+
+.stord-upsell--drawer .stord-upsell__track > .stord-upsell-tile {
+  scroll-snap-align: start;
+  flex: 0 0 calc(50% - var(--stord-upsell-tile-gap) / 2);
+  min-width: 0;
+}
+
+/* Image override â only for horizontal tiles (column-style, image on top).
+   The cart-page rule forces `aspect-ratio: 1` which would make the image
+   half the tile's height; we force a shorter fixed height for the drawer.
+   Vertical tiles use image-left/content-right and have their own 80Ã80
+   square image-wrap (see stord-upsell-tile.css) â leave that alone. */
+.stord-upsell--drawer
+  .stord-upsell-tile--horizontal
+  .stord-upsell-tile__image-wrap {
+  aspect-ratio: auto !important;
+  height: 70px !important;
+  width: 100% !important;
+  background: transparent !important;
+}
+
+.stord-upsell--drawer .stord-upsell-tile--horizontal .stord-upsell-tile__image,
+.stord-upsell--drawer
+  .stord-upsell-tile--horizontal
+  .stord-upsell-tile__image-placeholder {
+  height: 70px !important;
+  width: 100% !important;
+  object-fit: contain;
+}
+
+.stord-upsell--drawer .stord-upsell__header {
+  margin-bottom: 0.5rem;
+}
+
+/* Font sizes here are px, not rem, on purpose. rem is root-relative, and many
+   themes (incl. Dawn-derived ones like Ride) set `html { font-size: 62.5% }`
+   = 10px, which shrank this widget's text ~37% (CX-1991 follow-up). px keeps
+   the intended sizes (the values are the old rem * 16) on every theme. */
+.stord-upsell--drawer .stord-upsell__heading {
+  /* !important required because `.stord-upsell--cart .stord-upsell__heading`
+     later in this file has equal specificity (both 0,2,0) and would otherwise
+     win by cascade order. */
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  margin: 0;
+}
+
+.stord-upsell--drawer .stord-upsell__subheading {
+  font-size: 12px;
+  margin: 0.1rem 0 0;
+}
+
+.stord-upsell--drawer .stord-upsell__nav {
+  gap: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.stord-upsell--drawer .stord-upsell__nav-btn {
+  width: 26px;
+  height: 26px;
+  border-width: 1px;
+}
+
+.stord-upsell--drawer .stord-upsell__nav-btn svg {
+  width: 10px;
+  height: 10px;
+}
+
+.stord-upsell--drawer .stord-upsell-tile {
+  font-size: 12px;
+  border-radius: 0.375rem;
+}
+
+.stord-upsell--drawer .stord-upsell-tile__body {
+  padding: 0.45rem 0.5rem;
+  gap: 0.2rem;
+}
+
+.stord-upsell--drawer .stord-upsell-tile__name {
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.stord-upsell--drawer .stord-upsell-tile__desc {
+  font-size: 11px;
+  line-height: 1.25;
+  opacity: 0.7;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.stord-upsell--drawer .stord-upsell-tile__badge {
+  font-size: 10px;
+  padding: 0.1rem 0.35rem;
+  gap: 0.2rem;
+  margin: 0.1rem 0;
+}
+
+.stord-upsell--drawer .stord-upsell-tile__badge svg {
+  width: 9px;
+  height: 9px;
+}
+
+.stord-upsell--drawer .stord-upsell-tile__price-row {
+  font-size: 12px;
+  gap: 0.3rem;
+}
+
+.stord-upsell--drawer .stord-upsell-tile__atc {
+  font-size: 11px;
+  padding: 0.4rem 0.5rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Header ------------------------------------------------------------------- */
+
+.stord-upsell__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.stord-upsell__heading {
+  margin: 0 0 0.2rem;
+  color: inherit;
+}
+
+/* Cart surface overrides â keep PDP defaults untouched. */
+
+/* The cart section's flex container (`.layout-panel-flex--column`) uses
+   `align-items: flex-start`, so its flex items (Shopify's `.shopify-app-block`
+   wrapper around our widget) size to content on the cross axis instead of
+   stretching. The carousel track has `flex-wrap: nowrap` with all pages
+   side-by-side â huge intrinsic width â propagates up â widget overflows
+   the parent (and the viewport on mobile, causing horizontal page scroll).
+   We can't add classes to the Shopify wrapper, so target it with `:has()`:
+   force the wrapper to stretch and ignore its content's min-width. PDP
+   doesn't need this â its parent is a grid with explicit column sizing. */
+.shopify-app-block:has(> .stord-upsell--cart) {
+  align-self: stretch;
+  width: 100%;
+  min-width: 0;
+}
+
+.stord-upsell--cart,
+.stord-upsell--cart .stord-upsell__viewport,
+.stord-upsell--cart .stord-upsell__track {
+  min-width: 0;
+}
+
+.stord-upsell--cart .stord-upsell__heading {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+/* Cart-specific badge: own row between title and price, lighter pill, with tag icon. */
+.stord-upsell--cart .stord-upsell-tile__badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--stord-badge-bg);
+  margin: 0.15rem 0;
+}
+
+.stord-upsell--cart .stord-upsell-tile__badge svg {
+  flex-shrink: 0;
+}
+
+/* Cart-specific vertical tile: image | body | actions as three columns
+   (matches the admin preview). The default vertical-tile rule keeps actions
+   stacked inside body, which doesn't match the design â buildTile in cart
+   mode appends actions directly to the tile, and these rules size them.
+   On narrow viewports the actions wrap below so the body has room to read. */
+.stord-upsell--cart .stord-upsell-tile--vertical {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.stord-upsell--cart .stord-upsell-tile--vertical .stord-upsell-tile__body {
+  padding: 0;
+  flex: 1 1 8rem;
+  min-width: 7rem;
+  gap: 0.2rem;
+}
+
+.stord-upsell--cart .stord-upsell-tile--vertical .stord-upsell-tile__actions {
+  margin-top: 0;
+  padding: 0;
+  flex-shrink: 0;
+  width: auto;
+}
+
+.stord-upsell--cart .stord-upsell-tile--vertical .stord-upsell-tile__atc {
+  flex: 0 0 auto;
+  width: auto;
+  white-space: nowrap;
+  padding: 0.6rem 1.1rem;
+}
+
+/* Badge sits inline to the right of the price in vertical layout, and
+   wraps to a line _above_ the price when there isn't room (matches
+   the design spec). `wrap-reverse` flips the cross axis so wrapped
+   items land on a line above instead of below. `align-items: center`
+   keeps the pill badge visually aligned with the price text (the base
+   `baseline` alignment from the shared price-row rule pulls the pill
+   a few px above). */
+.stord-upsell--cart .stord-upsell-tile--vertical .stord-upsell-tile__price-row {
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+
+.stord-upsell__subheading {
+  margin: 0;
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+/* Navigation --------------------------------------------------------------- */
+
+.stord-upsell__nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.stord-upsell__nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(var(--stord-overlay-rgb), 0.15);
+  background: var(--stord-card-bg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition:
+    border-color 0.2s,
+    opacity 0.2s;
+}
+
+.stord-upsell__nav-btn:not(:disabled):hover {
+  border-color: rgba(var(--stord-overlay-rgb), 0.4);
+}
+
+.stord-upsell__nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Grid --------------------------------------------------------------------- */
+
+/* PDP carousel (page-based, translateX transitions). */
+.stord-upsell__viewport {
+  overflow: hidden;
+}
+
+.stord-upsell__track {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.stord-upsell__page {
+  flex-shrink: 0;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.stord-upsell__page::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cart carousel (per-item scroll). Native overflow-x gives free touch scroll
+   on mobile; arrow buttons drive scrollBy(tileWidth + gap) on desktop. Scroll
+   snap keeps tiles aligned to the left edge after either input. */
+.stord-upsell--cart .stord-upsell__viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.stord-upsell--cart .stord-upsell__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.stord-upsell--cart .stord-upsell__track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--stord-upsell-tile-gap);
+  transition: none;
+  will-change: auto;
+}
+
+.stord-upsell--cart:not(.stord-upsell--drawer) .stord-upsell__track {
+  width: 100%;
+}
+
+.stord-upsell--cart:not(.stord-upsell--drawer)
+  .stord-upsell__track
+  > .stord-upsell-tile {
+  scroll-snap-align: start;
+  flex: 1 0
+    calc(
+      (
+          100% - (var(--stord-upsell-per-view) - 1) *
+            var(--stord-upsell-tile-gap)
+        ) /
+        var(--stord-upsell-per-view)
+    );
+  min-width: 130px;
+  max-width: calc(
+    (100% - (var(--stord-upsell-per-view) - 1) * var(--stord-upsell-tile-gap)) /
+      var(--stord-upsell-per-view)
+  );
+}
+
+@media (max-width: 640px) {
+  .stord-upsell--cart:not(.stord-upsell--drawer)
+    .stord-upsell__track
+    > .stord-upsell-tile {
+    flex: 0 0 calc(50% - var(--stord-upsell-tile-gap) / 2);
+    min-width: 0;
+  }
+}
+
+.stord-upsell__grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.stord-upsell__grid[data-layout="horizontal"] {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.stord-upsell__grid[data-layout="vertical"] {
+  flex-direction: column;
+}
+
+/* Dots --------------------------------------------------------------------- */
+
+.stord-upsell__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.stord-upsell__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(var(--stord-overlay-rgb), 0.2);
+  flex-shrink: 0;
+  transition:
+    width 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.stord-upsell__dot--active {
+  width: 20px;
+  background: rgba(var(--stord-overlay-rgb), 0.85);
+}

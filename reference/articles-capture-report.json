@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "/blogs/news/remedies-for-hangovers",
+    "/blogs/news/enjoy-a-night-out",
+    "/blogs/news/science-behind-dhm"
+  ],
+  "pageCount": 3,
+  "assetCount": 20,
+  "assetBytes": 527124,
+  "failedAssets": [],
+  "scripts": [
+    {
+      "url": "https://www.undogummies.com/cdn/shop/t/32/assets/utils.js?v=32068786680498309641791467457",
+      "file": "inspect-utils.js.txt",
+      "bytes": 7965
+    },
+    {
+      "url": "https://www.undogummies.com/cdn/shop/t/32/assets/theme-events.js?v=65979754177087071131791467457",
+      "file": "inspect-theme-events.js.txt",
+      "bytes": 3717
+    },
+    {
+      "url": "https://www.undogummies.com/cdn/shop/t/32/assets/announcement-bar-rotator.js?v=122721007022089819311791467457",
+      "file": "inspect-announcement-bar-rotator.js.txt",
+      "bytes": 2571
+    },
+    {
+      "url": "https://www.undogummies.com/cdn/shop/t/32/assets/global.bundle.js?v=178276131320603640011791467457",
+      "file": "inspect-global.bundle.js.txt",
+      "bytes": 59126
+    },
+    {
+      "url": "https://www.undogummies.com/cdn/shop/t/32/assets/ESA.js?v=2828634537903295391791467457",
+      "file": "inspect-ESA.js.txt",
+      "bytes": 1131
+    }
+  ],
+  "errors": [],
+  "totalRoutesAfterMerge": 20,
+  "localizedArticleLinks": 3,
+  "missingLocalResources": [],
+  "executableScripts": [],
+  "remoteAssetReferences": [],
+  "existingPageChanges": "Only exact article hrefs and matching link field values were localized. All other existing properties preserved."
+}

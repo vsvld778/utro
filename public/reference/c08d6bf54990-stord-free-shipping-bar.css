@@ -1,0 +1,56 @@
+.shopify-block[data-block-handle="free-shipping-bar"] {
+  width: 100%;
+}
+
+.stord-fsb {
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--fsb-bg, #f0fdf4);
+  color: var(--fsb-text, #333333);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.stord-fsb[data-stord-fsb="drawer"][data-stord-fsb-position="above_line_items"] {
+  margin: 12px;
+}
+
+.stord-fsb__message {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stord-fsb__icon-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.stord-fsb__icon-wrap--reached {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--fsb-bar, #22c55e);
+}
+
+.stord-fsb__track {
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.stord-fsb__fill {
+  display: block !important;
+  height: 100%;
+  background-color: var(--fsb-bar, #22c55e);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}

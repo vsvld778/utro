@@ -1,0 +1,696 @@
+{
+  "/products/undo-hangover-gummies": [
+    {
+      "id": "PackSelectorConfigs-template--24075437670565__main-pack_selector_VfdBB4",
+      "value": [
+        {
+          "packIndex": 1,
+          "variantId": 47859799654565,
+          "qty": 1,
+          "multiplier": 1,
+          "packAmount": 5,
+          "unitPrice": 1900,
+          "unitCompare": 1900,
+          "available": true,
+          "planId": 4074045605,
+          "planPct": 10,
+          "oneTimePct": 0,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "url": "/products/undo-gummies%C2%AE-pre-alcohol-support-5-pack",
+          "featuredImageSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "overrideImageSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+          "overrideImageSrcset": "/reference/be35ee22aca6-Undo-5-pack.jpg 400w, /reference/be35ee22aca6-Undo-5-pack.jpg 800w, /reference/be35ee22aca6-Undo-5-pack.jpg 1200w, /reference/be35ee22aca6-Undo-5-pack.jpg 1600w, /reference/be35ee22aca6-Undo-5-pack.jpg 2400w",
+          "overrideImageAlt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "media": [
+            {
+              "id": 39826130403493,
+              "thumbSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+              "heroSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33333967028389,
+              "thumbSrc": "/reference/c3ee5f5e09c7-4_pack_supplement_facts.png",
+              "heroSrc": "/reference/c3ee5f5e09c7-4_pack_supplement_facts.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648102604965,
+              "thumbSrc": "/reference/12bd7300259f-undo_lifestyle-3.jpg",
+              "heroSrc": "/reference/12bd7300259f-undo_lifestyle-3.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648096706725,
+              "thumbSrc": "/reference/6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+              "heroSrc": "/reference/6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648113418405,
+              "thumbSrc": "/reference/72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+              "heroSrc": "/reference/72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            }
+          ]
+        },
+        {
+          "packIndex": 2,
+          "variantId": 47321176899749,
+          "qty": 1,
+          "multiplier": 1,
+          "packAmount": 15,
+          "unitPrice": 5700,
+          "unitCompare": 5700,
+          "available": true,
+          "planId": 4074078373,
+          "planPct": 15,
+          "oneTimePct": 5,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "url": "/products/undo-hangover-gummies",
+          "featuredImageSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "overrideImageSrc": null,
+          "overrideImageSrcset": null,
+          "overrideImageAlt": null,
+          "media": [
+            {
+              "id": 39826132271269,
+              "thumbSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "heroSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322682908837,
+              "thumbSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "heroSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 37358005878949,
+              "thumbSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "heroSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061371633829,
+              "thumbSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "heroSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322686021797,
+              "thumbSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "heroSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            }
+          ]
+        },
+        {
+          "packIndex": 3,
+          "variantId": 47321176899749,
+          "qty": 2,
+          "multiplier": 2,
+          "packAmount": 30,
+          "unitPrice": 5700,
+          "unitCompare": 5700,
+          "available": true,
+          "planId": 4074111141,
+          "planPct": 20,
+          "oneTimePct": 10,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "url": "/products/undo-hangover-gummies",
+          "featuredImageSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "overrideImageSrc": "/reference/635663933739-Undo-30-pack.jpg",
+          "overrideImageSrcset": "/reference/635663933739-Undo-30-pack.jpg 400w, /reference/635663933739-Undo-30-pack.jpg 800w, /reference/635663933739-Undo-30-pack.jpg 1200w, /reference/635663933739-Undo-30-pack.jpg 1600w, /reference/635663933739-Undo-30-pack.jpg 2400w",
+          "overrideImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "media": [
+            {
+              "id": 39826132271269,
+              "thumbSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "heroSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322682908837,
+              "thumbSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "heroSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 37358005878949,
+              "thumbSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "heroSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061371633829,
+              "thumbSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "heroSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322686021797,
+              "thumbSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "heroSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SubscribeSaveLabels-template--24075437670565__main-subscribe_save_QgGYy6",
+      "value": {
+        "1": "15 Days Subscription",
+        "2": "Monthly Subscription",
+        "3": "Monthly Subscription",
+        "4": "Monthly Subscription",
+        "default": "Monthly Subscription"
+      }
+    }
+  ],
+  "/pages/about": [],
+  "/pages/contact": [],
+  "/pages/store-locator": [],
+  "/": [
+    {
+      "id": "PackSelectorConfigs-template--24075437047973__featured_product_mtdTED-pack_selector_mB8Wa9",
+      "value": [
+        {
+          "packIndex": 1,
+          "variantId": 47859799654565,
+          "qty": 1,
+          "multiplier": 1,
+          "packAmount": 5,
+          "unitPrice": 1900,
+          "unitCompare": 1900,
+          "available": true,
+          "planId": 4074045605,
+          "planPct": 10,
+          "oneTimePct": 0,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "url": "/products/undo-gummies%C2%AE-pre-alcohol-support-5-pack",
+          "featuredImageSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "overrideImageSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+          "overrideImageSrcset": "/reference/be35ee22aca6-Undo-5-pack.jpg 400w, /reference/be35ee22aca6-Undo-5-pack.jpg 800w, /reference/be35ee22aca6-Undo-5-pack.jpg 1200w, /reference/be35ee22aca6-Undo-5-pack.jpg 1600w, /reference/be35ee22aca6-Undo-5-pack.jpg 2400w",
+          "overrideImageAlt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "media": [
+            {
+              "id": 39826130403493,
+              "thumbSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+              "heroSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33333967028389,
+              "thumbSrc": "/reference/c3ee5f5e09c7-4_pack_supplement_facts.png",
+              "heroSrc": "/reference/c3ee5f5e09c7-4_pack_supplement_facts.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648102604965,
+              "thumbSrc": "/reference/12bd7300259f-undo_lifestyle-3.jpg",
+              "heroSrc": "/reference/12bd7300259f-undo_lifestyle-3.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648096706725,
+              "thumbSrc": "/reference/6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+              "heroSrc": "/reference/6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648113418405,
+              "thumbSrc": "/reference/72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+              "heroSrc": "/reference/72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            }
+          ]
+        },
+        {
+          "packIndex": 2,
+          "variantId": 47321176899749,
+          "qty": 1,
+          "multiplier": 1,
+          "packAmount": 15,
+          "unitPrice": 5700,
+          "unitCompare": 5700,
+          "available": true,
+          "planId": 4074078373,
+          "planPct": 15,
+          "oneTimePct": 5,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "url": "/products/undo-hangover-gummies",
+          "featuredImageSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "overrideImageSrc": null,
+          "overrideImageSrcset": null,
+          "overrideImageAlt": null,
+          "media": [
+            {
+              "id": 39826132271269,
+              "thumbSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "heroSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322682908837,
+              "thumbSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "heroSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 37358005878949,
+              "thumbSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "heroSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061371633829,
+              "thumbSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "heroSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322686021797,
+              "thumbSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "heroSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            }
+          ]
+        },
+        {
+          "packIndex": 3,
+          "variantId": 47321176899749,
+          "qty": 2,
+          "multiplier": 2,
+          "packAmount": 30,
+          "unitPrice": 5700,
+          "unitCompare": 5700,
+          "available": true,
+          "planId": 4074111141,
+          "planPct": 20,
+          "oneTimePct": 10,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "url": "/products/undo-hangover-gummies",
+          "featuredImageSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "overrideImageSrc": "/reference/635663933739-Undo-30-pack.jpg",
+          "overrideImageSrcset": "/reference/635663933739-Undo-30-pack.jpg 400w, /reference/635663933739-Undo-30-pack.jpg 800w, /reference/635663933739-Undo-30-pack.jpg 1200w, /reference/635663933739-Undo-30-pack.jpg 1600w, /reference/635663933739-Undo-30-pack.jpg 2400w",
+          "overrideImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "media": [
+            {
+              "id": 39826132271269,
+              "thumbSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "heroSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322682908837,
+              "thumbSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "heroSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 37358005878949,
+              "thumbSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "heroSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061371633829,
+              "thumbSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "heroSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322686021797,
+              "thumbSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "heroSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SubscribeSaveLabels-template--24075437047973__featured_product_mtdTED-subscribe_save_MrUn4U",
+      "value": {
+        "1": "15 Days Subscription",
+        "2": "30 Days Subscription",
+        "3": "30 Days Subscription",
+        "4": "Monthly Subscription",
+        "default": "Monthly Subscription"
+      }
+    }
+  ],
+  "/pages/faqs": [],
+  "/pages/affiliate-program": [],
+  "/pages/wholesale-orders": [],
+  "/collections/pre-alcohol-gummies/products/undo-gummies%C2%AE-pre-alcohol-support-5-pack": [
+    {
+      "id": "PackSelectorConfigs-template--24075437637797__main-pack_selector_VfdBB4",
+      "value": [
+        {
+          "packIndex": 1,
+          "variantId": 47859799654565,
+          "qty": 1,
+          "multiplier": 1,
+          "packAmount": 5,
+          "unitPrice": 1900,
+          "unitCompare": 1900,
+          "available": true,
+          "planId": 4074045605,
+          "planPct": 10,
+          "oneTimePct": 0,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "url": "/products/undo-gummies%C2%AE-pre-alcohol-support-5-pack",
+          "featuredImageSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "overrideImageSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+          "overrideImageSrcset": "/reference/be35ee22aca6-Undo-5-pack.jpg 400w, /reference/be35ee22aca6-Undo-5-pack.jpg 800w, /reference/be35ee22aca6-Undo-5-pack.jpg 1200w, /reference/be35ee22aca6-Undo-5-pack.jpg 1600w, /reference/be35ee22aca6-Undo-5-pack.jpg 2400w",
+          "overrideImageAlt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack",
+          "media": [
+            {
+              "id": 39826130403493,
+              "thumbSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+              "heroSrc": "/reference/be35ee22aca6-Undo-5-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33333967028389,
+              "thumbSrc": "/reference/c3ee5f5e09c7-4_pack_supplement_facts.png",
+              "heroSrc": "/reference/c3ee5f5e09c7-4_pack_supplement_facts.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648102604965,
+              "thumbSrc": "/reference/12bd7300259f-undo_lifestyle-3.jpg",
+              "heroSrc": "/reference/12bd7300259f-undo_lifestyle-3.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648096706725,
+              "thumbSrc": "/reference/6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+              "heroSrc": "/reference/6ff5a61c9b22-UNDO_GUMMIES_GIRLS_PIER.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            },
+            {
+              "id": 33648113418405,
+              "thumbSrc": "/reference/72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+              "heroSrc": "/reference/72540f9e854f-UNDO_GUMMIES_LIPS.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 5 Pack"
+            }
+          ]
+        },
+        {
+          "packIndex": 2,
+          "variantId": 47321176899749,
+          "qty": 1,
+          "multiplier": 1,
+          "packAmount": 15,
+          "unitPrice": 5700,
+          "unitCompare": 5700,
+          "available": true,
+          "planId": 4074078373,
+          "planPct": 15,
+          "oneTimePct": 5,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "url": "/products/undo-hangover-gummies",
+          "featuredImageSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "overrideImageSrc": null,
+          "overrideImageSrcset": null,
+          "overrideImageAlt": null,
+          "media": [
+            {
+              "id": 39826132271269,
+              "thumbSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "heroSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322682908837,
+              "thumbSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "heroSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 37358005878949,
+              "thumbSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "heroSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061371633829,
+              "thumbSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "heroSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322686021797,
+              "thumbSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "heroSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            }
+          ]
+        },
+        {
+          "packIndex": 3,
+          "variantId": 47321176899749,
+          "qty": 2,
+          "multiplier": 2,
+          "packAmount": 30,
+          "unitPrice": 5700,
+          "unitCompare": 5700,
+          "available": true,
+          "planId": 4074111141,
+          "planPct": 20,
+          "oneTimePct": 10,
+          "title": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "url": "/products/undo-hangover-gummies",
+          "featuredImageSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+          "featuredImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "overrideImageSrc": "/reference/635663933739-Undo-30-pack.jpg",
+          "overrideImageSrcset": "/reference/635663933739-Undo-30-pack.jpg 400w, /reference/635663933739-Undo-30-pack.jpg 800w, /reference/635663933739-Undo-30-pack.jpg 1200w, /reference/635663933739-Undo-30-pack.jpg 1600w, /reference/635663933739-Undo-30-pack.jpg 2400w",
+          "overrideImageAlt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack",
+          "media": [
+            {
+              "id": 39826132271269,
+              "thumbSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "heroSrc": "/reference/2192db01e139-Undo-15-pack.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061372813477,
+              "thumbSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "heroSrc": "/reference/f78e96001114-716pIetA1CL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061403254949,
+              "thumbSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "heroSrc": "/reference/d16a85efac70-UNDNO_Gummies_-_Single_Pouch_1.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33357005193381,
+              "thumbSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "heroSrc": "/reference/5c07c196f8d5-Ingredients_UNDO_Prealcohol_gummies.png",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322682908837,
+              "thumbSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "heroSrc": "/reference/c8d11b1dd314-undo_lifestyle-8_29fe9572-c74b-43c5-b287-5364490b96ba.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 37358005878949,
+              "thumbSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "heroSrc": "/reference/e7f9b4affda3-81uPZc8ua2L._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 35061371633829,
+              "thumbSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "heroSrc": "/reference/ec1fd4e95ec8-81mhxNFMbdL._AC_SL1500.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            },
+            {
+              "id": 33322686021797,
+              "thumbSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "heroSrc": "/reference/f4551a756cc9-undo_pre_alcohol_gummies-1.jpg",
+              "alt": "UNDO Gummies® Pre-Alcohol Support - 15 Pack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SubscribeSaveLabels-template--24075437637797__main-subscribe_save_QgGYy6",
+      "value": {
+        "1": "15 Days Subscription",
+        "2": "Monthly Subscription",
+        "3": "Monthly Subscription",
+        "4": "Monthly Subscription",
+        "default": "Monthly Subscription"
+      }
+    }
+  ],
+  "/collections/pre-alcohol-gummies": [],
+  "/collections/all": [],
+  "/collections/best-sellers": [],
+  "/policies/refund-policy": [],
+  "/policies/terms-of-service": [],
+  "/policies/privacy-policy": [],
+  "/blogs/news": []
+}

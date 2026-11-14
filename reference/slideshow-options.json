@@ -1,0 +1,190 @@
+{
+  "/products/undo-hangover-gummies": {
+    "slideshow-template--24075437670565__undo_benefits_hz3iGA": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "rewind": false,
+      "autoWidth": true,
+      "gap": "1.25rem",
+      "focus": "left",
+      "type": "slide",
+      "padding": {
+        "left": "1.25rem",
+        "right": "0"
+      },
+      "breakpoints": {
+        "990": {
+          "arrows": false,
+          "padding": {
+            "left": "1.25rem",
+            "right": "1.25rem"
+          }
+        }
+      }
+    },
+    "slideshow-template--24075437670565__text_columns_with_images_PAD8mC": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "rewind": true,
+      "autoWidth": true,
+      "gap": "2.5rem",
+      "focus": "left",
+      "type": "slide",
+      "autoScroll": {
+        "autoStart": false,
+        "speed": 0
+      },
+      "padding": {
+        "left": "1.25rem",
+        "right": "1.25rem"
+      },
+      "breakpoints": {
+        "990": {
+          "destroy": "true"
+        }
+      }
+    }
+  },
+  "/pages/about": {},
+  "/pages/contact": {
+    "slideshow-template--24075437211813__undo_reviews_v2_z9TJzN": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "perMove": 1,
+      "rewind": true,
+      "autoWidth": true,
+      "gap": "1.25rem",
+      "focus": "left",
+      "type": "loop",
+      "padding": {
+        "left": "calc(max(0px, (100vw - var(--max-site-width)) / 2) + var(--section-x-padding))",
+        "right": "0"
+      }
+    }
+  },
+  "/pages/store-locator": {},
+  "/": {
+    "slideshow-template--24075437047973__undo_benefits_DNnHTq": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "rewind": false,
+      "autoWidth": true,
+      "gap": "1.25rem",
+      "focus": "left",
+      "type": "slide",
+      "padding": {
+        "left": "1.25rem",
+        "right": "0"
+      },
+      "breakpoints": {
+        "990": {
+          "arrows": false,
+          "padding": {
+            "left": "1.25rem",
+            "right": "1.25rem"
+          }
+        }
+      }
+    },
+    "slideshow-template--24075437047973__text_columns_with_images_4h8d3J": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "rewind": true,
+      "autoWidth": true,
+      "gap": "2.5rem",
+      "focus": "left",
+      "type": "slide",
+      "autoScroll": {
+        "autoStart": false,
+        "speed": 0
+      },
+      "padding": {
+        "left": "1.25rem",
+        "right": "1.25rem"
+      },
+      "breakpoints": {
+        "990": {
+          "destroy": "true"
+        }
+      }
+    },
+    "slideshow-template--24075437047973__undo_reviews_v2_cTdzaJ": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "perMove": 1,
+      "rewind": true,
+      "autoWidth": true,
+      "gap": "1.25rem",
+      "focus": "left",
+      "type": "loop",
+      "padding": {
+        "left": "calc(max(0px, (100vw - var(--max-site-width)) / 2) + var(--section-x-padding))",
+        "right": "0"
+      }
+    }
+  },
+  "/pages/faqs": {},
+  "/pages/affiliate-program": {},
+  "/pages/wholesale-orders": {},
+  "/collections/pre-alcohol-gummies/products/undo-gummies%C2%AE-pre-alcohol-support-5-pack": {
+    "slideshow-template--24075437637797__undo_benefits_hz3iGA": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "rewind": false,
+      "autoWidth": true,
+      "gap": "1.25rem",
+      "focus": "left",
+      "type": "slide",
+      "padding": {
+        "left": "1.25rem",
+        "right": "0"
+      },
+      "breakpoints": {
+        "990": {
+          "arrows": false,
+          "padding": {
+            "left": "1.25rem",
+            "right": "1.25rem"
+          }
+        }
+      }
+    },
+    "slideshow-template--24075437637797__text_columns_with_images_PAD8mC": {
+      "mediaQuery": "min",
+      "arrows": true,
+      "pagination": false,
+      "rewind": true,
+      "autoWidth": true,
+      "gap": "2.5rem",
+      "focus": "left",
+      "type": "slide",
+      "autoScroll": {
+        "autoStart": false,
+        "speed": 0
+      },
+      "padding": {
+        "left": "1.25rem",
+        "right": "1.25rem"
+      },
+      "breakpoints": {
+        "990": {
+          "destroy": "true"
+        }
+      }
+    }
+  },
+  "/collections/pre-alcohol-gummies": {},
+  "/collections/all": {},
+  "/collections/best-sellers": {},
+  "/policies/refund-policy": {},
+  "/policies/terms-of-service": {},
+  "/policies/privacy-policy": {},
+  "/blogs/news": {}
+}
