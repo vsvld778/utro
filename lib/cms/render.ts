@@ -1,3 +1,4 @@
+import {contactMarkup} from '../../public/brand-contact.js';
 import {pages, canonicalPath, pageLocale} from './pages';
 import {Config,defaultPrices,defaultIntegrations,defaultCartSettings} from './types';
 import {storefrontText} from '../../public/storefront-text.js';
@@ -12,7 +13,7 @@ function versionMedia(value:unknown):unknown {
 }
 function brandMarkup(html:string,context:{origin?:string;path:string;title:string}):string {
  // Product gallery URLs also live in non-executable JSON, outside image attributes.
- const withJSON=html.replace(/(<script\b[^>]*\btype=["']application\/json["'][^>]*>)([\s\S]*?)(<\/script>)/gi,(whole,open,body,close)=>{
+ const withJSON=contactMarkup(html).replace(/(<script\b[^>]*\btype=["']application\/json["'][^>]*>)([\s\S]*?)(<\/script>)/gi,(whole,open,body,close)=>{
   try{return open+safeJSON(versionMedia(JSON.parse(body)))+close;}catch{return whole;}
  });
  return withJSON.replace(/(\s)(src|srcset|poster|href)(\s*=\s*)(["'])(.*?)\4/gi,(whole,space,name,equals,quote,raw)=>{

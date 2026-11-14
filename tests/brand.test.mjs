@@ -1,3 +1,4 @@
+import {contactText} from '../public/brand-contact.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -28,7 +29,7 @@ test('Every Russian snapshot and accessible label displays UTRO, retaining the a
   const body=page.body.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1\s*>/gi,'');
   const values=[page.title,...page.sections.map(s=>s.label),...page.fields.map(f=>f.label),...page.fields.filter(f=>f.kind==='text').map(f=>f.value),...page.fields.map(f=>f.alt||''),body.replace(/<[^>]*>/g,'')];
   for(const match of body.matchAll(/\b(?:alt|aria-label|title|placeholder|data-custom-title)\s*=\s*(["'])(.*?)\1/gis))values.push(match[2]);
-  for(const value of values)assert.equal(brandText(value),value,'Unconverted visible brand at '+path+': '+value.slice(0,160));
+  for(const value of values)assert.equal(brandText(value),contactText(value),'Unconverted visible brand at '+path+': '+value.slice(0,160));
   const en=pages['/en'+path];
   assert.equal(en.title,original[path].title);
   assert.deepEqual(en.fields.filter(f=>f.kind==='text').map(f=>f.value),original[path].fields.filter(f=>f.kind==='text').map(f=>f.value));
@@ -43,4 +44,23 @@ test('Rebranding leaves product handles and media references intact in runtime J
  const collect=value=>Array.isArray(value)?value.flatMap(collect):value&&typeof value==='object'?Object.entries(value).flatMap(([key,item])=>keys.has(key)?[[key,item],...collect(item)]:collect(item)):[];
  const runtime=body=>[...body.matchAll(/<script\b[^>]*type="application\/json"[^>]*>([\s\S]*?)<\/script>/gi)].map(m=>JSON.parse(m[1]));
  for(const [path,page] of Object.entries(original))assert.deepEqual(collect(runtime(pages[path].body)),collect(runtime(page.body)),path);
+});
+
+// Test the actual server HTML, including the first response before browser JS.
+test('Every rendered Russian page removes original-store contact text and mail links', async()=>{
+ const {pages,renderStorefront}=await import('../local/generated/shared.mjs');
+ let count=0;
+ for(const [path,page] of Object.entries(pages)){
+  if(page.locale!=='ru')continue;
+  count++;
+  const html=renderStorefront({path,config:{fields:{},hidden:[],order:[]},settings:{fields:{},hidden:[],order:[]},origin:'https://utro.example'});
+  const visible=html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1\s*>/gi,'').replace(/<[^>]*>/g,'');
+  assert.doesNotMatch(visible,/undo/i,path);
+  assert.doesNotMatch(html,/href=["']mailto:info@undogummies\.com/i,path);
+ }
+ assert.equal(count,20);
+ const {brandShareURL}=await import('../public/brand-media.js');
+ assert.equal(brandShareURL('mailto:info@undogummies.com'),'/pages/contact');
+ assert.equal(brandShareURL('mailto:owner@example.com'),'mailto:owner@example.com');
+ assert.equal(contactText('info@undogummies.com'),'форму обратной связи');
 });

@@ -1,6 +1,7 @@
+import {contactURL} from './brand-contact.js';
 // Only bundled images replaced during the UTRO rebrand are versioned.
 // Uploaded /media files and arbitrary external/custom URLs retain their identity.
-export const BRAND_MEDIA_VERSION = 'utro-20261113';
+export const BRAND_MEDIA_VERSION = 'utro-20261114';
 const brandedMediaPaths = new Set([
  "/assets/benefit-bloating.jpg",
  "/assets/benefit-focus.jpg",
@@ -127,6 +128,7 @@ const articleImages = {
 };
 
 export function brandShareURL(value, {origin, path, title} = {}) {
+ value = contactURL(value);
  if (typeof value !== 'string') return value;
  const route = legacyShareLinks.get(value.replace(/&amp;/g, '&'));
  if (!route || !origin) return value;
